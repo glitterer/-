@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main(void)
+{
+	printf("Print Name \n \nand \n \nPrint Address \n \nand \n \nPrint Phone Number \n");
+	return 0;
+}
