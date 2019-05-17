@@ -1,9 +1,3 @@
-'print the following
-'홍길동
-'홍 길 동
-'홍  길  동
-
-
 #include <stdio.h>
 int main(void)
 {
