@@ -1,4 +1,3 @@
-# hello-world
-New to C-Programming and data structure
+Beginner of C and data structure
 
-Practicing and practicing
+use "윤성우의 C" & "윤성우의 자료구조" & etc
