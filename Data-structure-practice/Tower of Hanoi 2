@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void HanoiTowerMove(int, char, char, char);
+
+int main(void)
+{
+	// 막대A의 원반 3개를 막대B를 경유하여 막대C로 옮기기
+	HanoiTowerMove(3, 'A', 'B', 'C');	//원반갯수, 막대A, 막대B, 막대C
+	return 0;
+}
+
+void HanoiTowerMove(int num, char a, char b, char c)
+{
+	if (num == 1)    // 이동할 원반의 수가 1개라면
+	{
+		printf("원반 1 : %c --> %c \n", a, c);
+		return;
+	}
+	else
+	{
+		HanoiTowerMove(num - 1, a, c, b);    // 3단계 중 1단계
+		printf("원반 %d : %c --> %c \n", num, a, c);  // 3단계 중 2단계
+		HanoiTowerMove(num - 1, b, a, c);    // 3단계 중 3단계
+	}
+}
